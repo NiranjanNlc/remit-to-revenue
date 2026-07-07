@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la .claude)",
+      "Bash(mkdir -p \".claude/skills\")",
+      "Bash(mkdir -p .claude/skills/references)",
+      "Bash(cp -r \"./fianan calc /vulnerable-user-ui-safety/references\"/* .claude/skills/references/)",
+      "Bash(cp -r \"./fianan calc /financial-calc-verification/references\"/* .claude/skills/references/)",
+      "Bash(cp -r \"./fianan calc /offline-resilience/references\"/* .claude/skills/references/)",
+      "Bash(cp -r \"./files \\(2\\)/specification-driven-development/references\"/* .claude/skills/references/)",
+      "Skill(artifact-design)",
+      "Bash(awk '{print $NF}')",
+      "Bash(ps *)",
+      "Bash(curl -s http://localhost:5173/)",
+      "Bash(claude mcp *)",
+      "mcp__netlify__netlify-user-services-reader",
+      "Bash(npm run *)",
+      "mcp__netlify__netlify-project-services-updater",
+      "mcp__netlify__netlify-deploy-services-updater",
+      "mcp__netlify__netlify-deploy-services-reader",
+      "Skill(run)",
+      "Bash(npx --yes playwright install chromium --with-deps)",
+      "Bash(npx --yes playwright install chromium)",
+      "Bash(curl -s http://localhost:5174)",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Bash(node drive.js)",
+      "Bash(curl *)",
+      "Bash(pkill -f \"vite\")",
+      "Bash(pkill -f \"npm run dev\")",
+      "Bash(kill 15835 18206 18672)",
+      "Bash(kill -9 18801)",
+      "Bash(pkill -9 -f vite)",
+      "Bash(sed -i 's/\"name\": \"remittance-tracker\",/\"name\": \"remit-to-revenue\",/' package.json)",
+      "Bash(sed -i 's/<title>Remittance Tracker<\\\\/title>/<title>Remit to Revenue<\\\\/title>/' index.html)",
+      "Bash(sed -i 's/# Remittance Tracker + Savings App/# Remit to Revenue + Savings App/' REMITTANCE_PLAN.md)",
+      "Bash(sed -i 's/# Remittance Tracker Setup Guide/# Remit to Revenue Setup Guide/' SETUP.md)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'Initial commit: Remit to Revenue app with Supabase integration *)"
+    ]
+  }
+}

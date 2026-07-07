@@ -37,7 +37,10 @@
       "Bash(sed -i 's/# Remittance Tracker Setup Guide/# Remit to Revenue Setup Guide/' SETUP.md)",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit -m 'Initial commit: Remit to Revenue app with Supabase integration *)"
+      "Bash(git commit -m 'Initial commit: Remit to Revenue app with Supabase integration *)",
+      "Bash(gh repo *)",
+      "Bash(git commit -m 'feat\\(ui\\): add tabbed homepage with vision statement *)",
+      "Bash(git push *)"
     ]
   }
 }

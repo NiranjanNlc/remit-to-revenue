@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react'
 import { supabase } from './utils/supabase'
+import HomePage from './pages/HomePage'
 import Auth from './components/Auth'
 import Dashboard from './components/Dashboard'
 
 export default function App() {
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
+  const [showAuth, setShowAuth] = useState(false)
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
@@ -30,5 +32,13 @@ export default function App() {
     )
   }
 
-  return user ? <Dashboard user={user} /> : <Auth setUser={setUser} />
+  if (user) {
+    return <Dashboard user={user} />
+  }
+
+  if (showAuth) {
+    return <Auth setUser={setUser} />
+  }
+
+  return <HomePage onGetStarted={() => setShowAuth(true)} />
 }
